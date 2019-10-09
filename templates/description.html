@@ -1,0 +1,15 @@
+ 
+ <body style="background-color: #C0C0C6"> 
+      
+ 
+ 
+ 
+ 
+ {% for i in items %}
+			
+   <center><div style="background-color:#404060; width: 900px; height: 350px;"><center>  <h1 style="color: white;"> {{i.name}} </h1>
+		<p style="color: white;">{{i.description}}</p>
+	<center></center><a href="{{url_for('showCategory')}}"><button style="width: 100px; background-color: white; border: none;">Cancel </button></a></div></center>
+    
+						
+		{% endfor %}

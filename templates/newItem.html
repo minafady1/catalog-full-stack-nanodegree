@@ -1,0 +1,17 @@
+<html>
+    <body style="background-color: #C0C0C6">
+        <center><div style="background-color:#404060; width: 900px; height: 350px;">
+        <h1 style="color: white;">new item</h1>
+        <form action="{{url_for('newItem',category_name=category_name)}}" method='post'>
+             <p style="color: white;">name</p>
+             <input type='text' name='name'required>
+             <p style="color: white;">description</p>
+             <input style="width: 500px; height: 100px;" type='text' name='des'>
+             <input style="width: 500px;" type='submit' value='create'>
+             
+        </form>
+        <a href = "{{url_for('showMenu', category_name = category_name)}}"> <button style="width: 100px; background-color: white; border: none;">Cancel </button></a></div></center>
+
+        </div>
+    </body>
+</htm>

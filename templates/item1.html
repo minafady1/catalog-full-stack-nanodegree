@@ -1,0 +1,22 @@
+
+
+
+
+<body style="background-color: #C0C0C6">
+<div style="background-color: #404060; height:  40px; width: 1550px;position: absolute; top: 0px; left:0;">
+<div style="background-color: #FFBA44 ; height: 70px; width: 1550px; position: absolute; top: 70px; left: 0px; "><center><h1 style="color: white; ">{{category.name}}</h1></center></div>
+<a href="{{url_for('showLogin')}}"><button style="height:30px; width: 70px; background-color: #111144; color: white; border: none; position: absolute; right: 20px; ">login</button></a> <br>
+	
+		  
+		
+	
+		
+	   {% for i in items %}
+						
+							
+	<div style="position: relative; top: 200px; background-color: green; height: 100px; "> <center><h1><a style="color: white;" href="{{url_for('showDes', category_name = category.name , item_name=i.name )}}">{{i.name}}</a></center> </h1>
+							
+						</div>
+		{% endfor %}
+	
+</div></body>

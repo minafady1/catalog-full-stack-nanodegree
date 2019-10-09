@@ -1,0 +1,13 @@
+
+<body style="background-color: #C0C0C6">
+<div style="background-color: #404060; height:  40px; width: 1550px;position: absolute; top: 0px; left:0;">
+<a href="{{url_for('showLogin')}}"><button style="height:30px; width: 70px; background-color: #111144; color: white; border: none; position: absolute; right: 20px; ">login</button></a> <br>
+</div>
+<div style="background-color: #FFBA44 ; height: 70px; width: 1550px; position: absolute; top: 70px; left: 0px; "><center><h1 style="color: white; ">Categories</h1></center></div>
+{% for category in categories %}
+			
+<center><a href="{{url_for('showMenu', category_name = category.name )}}"><button style="color: white; font-size: 50px; position: relative; top: 200px; background-color: #00C400; border: none; width: 300px; height: 100px;">{{category.name}}</button></a></center>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+{% endfor %}
+
+</body>

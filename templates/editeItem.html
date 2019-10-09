@@ -1,0 +1,14 @@
+<html>
+   <body style="background-color: #C0C0C6"> 
+      <center><div style="background-color:#404060; width: 900px; height: 350px;"><center>  <h1 style="color: white;">edite item {{item_name}} </h1>
+        <form action="{{url_for('editItem',category_name=category_name,item_name=item_name)}}" method='post'>
+             <p style="color: white;">new name</p>
+             <input type='text' name='name' >
+             <p style="color: white;">description</p>
+             <input style="width: 500px; height: 100px;" type='text' name='des'><br> <br>
+             <input style="width: 500px;" type='submit' value='edite'>
+        </form>
+<a href = "{{url_for('showMenu', category_name = category_name)}}"> <button style="width: 100px; background-color: white; border: none;">Cancel </button></a></div></center>
+        
+    </body>
+</htm>
