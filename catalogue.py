@@ -19,7 +19,7 @@ app = Flask(__name__)
 CLIENT_ID = json.loads(
         open('client_secrets.json', 'r').read())['web']['client_id']
 
-engine = create_engine('sqlite:///category.db')
+engine = create_engine('postgresql://catalog:123@localhost/catalog')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
